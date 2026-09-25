@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jacobi-lab"
+version = "1.1.0"
+description = "Лабораторная работа 1: метод вращений Якоби"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.23"]
+
+[project.scripts]
+jacobi-lab = "jacobi_lab.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["jacobi_lab*"]

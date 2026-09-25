@@ -1,0 +1,21 @@
+# Материалы курса: задания лабораторных и лекции
+lab*.pdf
+lecture*.pdf
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Редакторы и ОС
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+.DS_Store
