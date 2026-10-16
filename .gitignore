@@ -7,11 +7,40 @@ __pycache__/
 *.py[cod]
 *.egg-info/
 build/
+dist/
+*.whl
 .venv/
 venv/
+env/
+
+# Кэши проверок и отчёты покрытия
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
 
 # Jupyter
 .ipynb_checkpoints/
+
+# Локальные резервные копии и черновики
+/backups/
+/3 и 4 лабы.txt
+*.bak
+*.tmp
+*.swp
+*.swo
+*~
+
+# Локальные настройки окружения
+.env
+.env.*
+!.env.example
+!.env.sample
 
 # Редакторы и ОС
 .vscode/

@@ -1,0 +1,8 @@
+test_analytic_line_and_intervals (test_regression.RegressionTests.test_analytic_line_and_intervals) ... ok
+test_local_data_and_normal_equations (test_regression.RegressionTests.test_local_data_and_normal_equations) ... ok
+test_rank_and_invalid_data (test_regression.RegressionTests.test_rank_and_invalid_data) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.011s
+
+OK

@@ -1,0 +1,17 @@
+{
+  "seed": 2026,
+  "widths": [
+    2,
+    4,
+    8,
+    16,
+    32
+  ],
+  "learning_rate": 1e-06,
+  "tolerance": 0.001,
+  "max_iter": 30000,
+  "loss": "sum of squared errors, raw inputs and target",
+  "decay": "learning_rate / (1 + step / 1000)",
+  "stopping": "infinity norm of gradient < tolerance",
+  "Heaviside_at_zero": 1
+}

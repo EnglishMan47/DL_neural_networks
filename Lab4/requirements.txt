@@ -1,0 +1,2 @@
+-r ../Lab3/requirements.txt
+scikit-learn>=1.3

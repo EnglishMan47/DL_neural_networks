@@ -1,0 +1,11 @@
+test_convergence_at_known_solution (test_perceptron.PerceptronTests.test_convergence_at_known_solution) ... ok
+test_gradients_on_known_example (test_perceptron.PerceptronTests.test_gradients_on_known_example) ... ok
+test_heaviside_at_zero (test_perceptron.PerceptronTests.test_heaviside_at_zero) ... ok
+test_invalid_parameters (test_perceptron.PerceptronTests.test_invalid_parameters) ... ok
+test_learning_reproducibility_and_saved_weights (test_perceptron.PerceptronTests.test_learning_reproducibility_and_saved_weights) ... ok
+test_one_step_and_decay (test_perceptron.PerceptronTests.test_one_step_and_decay) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.284s
+
+OK
