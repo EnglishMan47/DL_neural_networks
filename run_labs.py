@@ -1,4 +1,4 @@
-"""Выполнить ноутбуки текущим Python: python run_labs.py [3 4]."""
+"""Выполнить ноутбуки текущим Python: python run_labs.py [3 4 6]."""
 import argparse
 from pathlib import Path
 import sys
@@ -10,12 +10,12 @@ from jupyter_client import KernelManager
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('labs', nargs='*', type=int, metavar='{3,4}')
+    parser.add_argument('labs', nargs='*', type=int, metavar='{3,4,6}')
     args = parser.parse_args()
-    if any(number not in (3, 4) for number in args.labs):
-        parser.error('Доступны только лабораторные 3 и 4')
+    if any(number not in (3, 4, 6) for number in args.labs):
+        parser.error('Доступны только лабораторные 3, 4 и 6')
     root = Path(__file__).resolve().parent
-    for number in args.labs or [3, 4]:
+    for number in args.labs or [3, 4, 6]:
         path = root / f'Lab{number}/Lab{number}.ipynb'
         notebook = nbformat.read(path, as_version=4)
         manager = KernelManager(kernel_name='python3')
