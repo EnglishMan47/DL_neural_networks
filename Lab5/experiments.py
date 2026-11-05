@@ -1,4 +1,4 @@
-"""Воспроизводимые эксперименты: python Lab6/experiments.py [--epochs 3000]"""
+"""Воспроизводимые эксперименты: python Lab5/experiments.py [--epochs 3000]"""
 
 import argparse
 import importlib.metadata

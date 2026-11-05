@@ -1,10 +1,10 @@
 # Стохастический градиентный спуск и его модификации
 
-Лабораторная работа 6. Выполнены задачи 1-4 и дополнительная задача 5*:
+Лабораторная работа 5. Выполнены задачи 1-4 и дополнительная задача 5*:
 золотое сечение, обучение трёх моделей численным градиентным спуском,
 минибатчи, импульс Нестерова, Adam и квадратичный штраф.
 
-[Отчёт](Lab6.ipynb) · [Задание](../lab6b.pdf) · [Лекция](../lecture6.pdf) ·
+[Отчёт](Lab5.ipynb) · [Задание](../lab6b.pdf) · [Лекция](../lecture6.pdf) ·
 [Алгоритмы](optimization.py) · [Эксперименты](experiments.py) · [Данные](data.csv) · [Результаты](results/)
 
 ## Запуск
@@ -14,27 +14,27 @@
 
 ```powershell
 python -m venv .venv
-.\.venv\Scripts\python.exe -m pip install -r Lab6/requirements.txt
-.\.venv\Scripts\python.exe run_labs.py 6
+.\.venv\Scripts\python.exe -m pip install -r Lab5/requirements.txt
+.\.venv\Scripts\python.exe run_labs.py 5
 ```
 
 Для воспроизведения с проверенными версиями вместо `requirements.txt`
-можно установить `Lab6/requirements-lock.txt`.
+можно установить `Lab5/requirements-lock.txt`.
 В Linux / macOS используются `python3` и `./.venv/bin/python`.
 
 Ноутбук уже выполнен: таблицы и графики доступны без повторного обучения.
 Повторный запуск пересчитывает все **351 эксперимента** и обновляет выводы,
 таблицы, рисунки и девять NPZ-моделей. Это занимает несколько минут.
 Для интерактивной работы нужно выбрать ядро `.venv` и выполнить ячейки сверху вниз.
-Рабочим каталогом может быть корень проекта или папка `Lab6`.
+Рабочим каталогом может быть корень проекта или папка `Lab5`.
 
 Отдельный пересчёт экспериментальных CSV и моделей, без обновления ноутбука и рисунков:
 
 ```powershell
-.\.venv\Scripts\python.exe Lab6/experiments.py
+.\.venv\Scripts\python.exe Lab5/experiments.py
 ```
 
-Команда `python experiments.py` из папки `Lab6` делает то же самое.
+Команда `python experiments.py` из папки `Lab5` делает то же самое.
 Модуль читает `data.csv` рядом с собой независимо от рабочего каталога.
 Флаг `--epochs` меняет лимит для отдельного исследовательского запуска;
 сохранённый отчёт относится к полному протоколу из 3000 эпох.
@@ -117,16 +117,16 @@ GD использует постоянную скорость; остальны�
 
 ```python
 import numpy as np
-from Lab6.optimization import predict_saved
+from Lab5.optimization import predict_saved
 
 prediction = predict_saved(
-    'Lab6/models/relu_adam_b3_l0.npz',
+    'Lab5/models/relu_adam_b3_l0.npz',
     np.array([0.2, 0.8, 1.5]),
 )
 print(prediction)
 ```
 
-Из папки `Lab6` импорт имеет вид `from optimization import predict_saved`,
+Из папки `Lab5` импорт имеет вид `from optimization import predict_saved`,
 а путь к архиву - `models/relu_adam_b3_l0.npz`.
 Каждый архив содержит имя модели и её полный вектор параметров;
 вход и выход имеют исходную шкалу таблицы задания.
@@ -136,8 +136,8 @@ NPZ-модели сохранены для Adam, B=3, seed=2026 и всех тр
 ## Файлы
 
 ```text
-Lab6/
-├── Lab6.ipynb
+Lab5/
+├── Lab5.ipynb
 ├── README.md
 ├── data.csv
 ├── optimization.py
@@ -168,10 +168,10 @@ Lab6/
 ## Проверки и ограничения
 
 ```powershell
-.\.venv\Scripts\python.exe -m unittest discover -s Lab6/tests -v
+.\.venv\Scripts\python.exe -m unittest discover -s Lab5/tests -v
 ```
 
-Из папки `Lab6`: `python -m unittest discover -s tests -v`.
+Из папки `Lab5`: `python -m unittest discover -s tests -v`.
 Одиннадцать тестов проверяют золотое сечение на известной функции и задаче,
 численные производные, три формулы моделей, выходную ReLU, L2 без смещений,
 масштабирование батчей, покрытие эпохи, шаг GD, предсказанную точку Нестерова,
