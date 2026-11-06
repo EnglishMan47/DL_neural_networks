@@ -2,6 +2,9 @@
 lab*.pdf
 lecture*.pdf
 
+# Локальные инструкции агента
+AGENTS.md
+
 # Python
 __pycache__/
 *.py[cod]

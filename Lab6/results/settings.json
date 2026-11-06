@@ -1,0 +1,25 @@
+{
+  "seed": 2026,
+  "logits": [
+    -3.0,
+    1.0,
+    100.0,
+    5.0,
+    -1.0
+  ],
+  "X_shape_convention": "D x N",
+  "softmax_axis_attention": 0,
+  "MLP_hidden_assumption": "H = D*N for comparison table",
+  "significant_digits": 5,
+  "relative_tolerance": 1e-05,
+  "absolute_tolerance": 1e-07,
+  "permutation_checks": 120,
+  "python": "3.11.8",
+  "versions": {
+    "numpy": "2.4.6",
+    "pandas": "3.0.6",
+    "matplotlib": "3.11.2",
+    "nbformat": "5.11.1",
+    "nbclient": "0.11.0"
+  }
+}

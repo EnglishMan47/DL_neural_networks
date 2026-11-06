@@ -1,0 +1,17 @@
+test_all_24_permutations_with_and_without_scaling (test_attention.AttentionTests.test_all_24_permutations_with_and_without_scaling) ... ok
+test_attention_against_independent_query_loop (test_attention.AttentionTests.test_attention_against_independent_query_loop) ... ok
+test_initialization_reproducibility (test_attention.AttentionTests.test_initialization_reproducibility) ... ok
+test_invalid_counts_permutations_inputs_and_parameters (test_attention.AttentionTests.test_invalid_counts_permutations_inputs_and_parameters) ... ok
+test_mlp_parameter_count_for_general_hidden_width (test_attention.AttentionTests.test_mlp_parameter_count_for_general_hidden_width) ... ok
+test_parameter_counts_against_allocated_arrays (test_attention.AttentionTests.test_parameter_counts_against_allocated_arrays) ... ok
+test_permutation_matrix_from_assignment (test_attention.AttentionTests.test_permutation_matrix_from_assignment) ... ok
+test_all_25_derivatives_by_exponentials (test_softmax.SoftmaxTests.test_all_25_derivatives_by_exponentials) ... ok
+test_derivatives_for_ordinary_logits (test_softmax.SoftmaxTests.test_derivatives_for_ordinary_logits) ... ok
+test_invalid_logits_and_axes (test_softmax.SoftmaxTests.test_invalid_logits_and_axes) ... ok
+test_probabilities_to_five_significant_digits (test_softmax.SoftmaxTests.test_probabilities_to_five_significant_digits) ... ok
+test_small_diagonal_value (test_softmax.SoftmaxTests.test_small_diagonal_value) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.094s
+
+OK
